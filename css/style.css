@@ -1,4 +1,90 @@
-.portfolio {
-    background-color: #fff;
-    color: #555; 
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0px; 
+    color: #000; 
+  }
+a {
+    text-decoration: none; 
+    color: #000; 
+    font-size: 30px; 
+}
+a :hover {
+    color: #777; 
+}
+h1 {
+    font-size: 1.5em; 
+    text-transform: uppercase;
+  }
+h2 {
+    font-size: 1.3em; 
+    text-transform: uppercase;
+  }
+
+#brand { 
+    height: 50px;
+    text-align: center;
+}
+#brand-icons {
+    text-align: center; 
+    margin: auto; 
+}
+.special-text {
+    font-size: 2em; 
+    color: #fff; 
+}
+.main-boxes {
+    background-color: #9ad7d8;
+    height: auto; 
+    padding: 2%; 
+}
+.main-box-one {
+    text-align: left;
+    margin: 5px;
+    padding: 5%; 
+    max-width: 60%;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-boxes {
+        background-color: #9ad7d8;
+        padding: 1%; 
+        margin-bottom: 3%; 
+        height: auto; 
+    }
+}
+#img {
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+}
+#top-ten {
+    margin: auto; 
+    width: 75%; 
+    height: auto;
+    text-align: left; 
+}
+#top-ten a {
+    color: #f1697f;
+    font-size: 18px; 
+}
+#top-ten a :hover{
+    color: #f169e6;
+    font-size: 20px; 
+}
+#main {
+    color: #000; 
+    height: auto;
+    text-align: center; 
+}
+
+#portfolio {
+    background-color: #ffe6e1;
+    height: auto;
+}
+
+footer {
+    display: block;
+    text-align: center; 
+    margin: auto;
 }
