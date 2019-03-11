@@ -135,7 +135,7 @@ h2 {
     max-width: 50vw;
 }
 .stack {
-    width: 33%; 
+    width: 33.33%; 
     float: left; 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
@@ -161,7 +161,6 @@ h2 {
      box-sizing: border-box; 
      float: left;
      text-align: center;
-     
 }
 .filters img {
     height: 180px;
@@ -240,6 +239,9 @@ h2 {
     color: #000; 
     height: auto;
     text-align: center; 
+}
+.group-section {
+    height: auto; 
 }
 
 footer {
