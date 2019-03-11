@@ -41,7 +41,6 @@ box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
 .nav p {
     font-size: 20px; 
     color: #000;
-    float: left; 
     display: inline-block;
     text-transform: uppercase; 
 }
@@ -252,4 +251,9 @@ footer {
     width: 100%;
     margin: auto;
     clear: both; 
+}
+.practice {
+    height: 400px; 
+    color: #000;
+    font-size: 30px; 
 }
