@@ -1,12 +1,61 @@
 body {
     font-family: 'Oswald', sans-serif;
-    margin: 0px; 
+    margin: 0 0 0 0; 
     color: #000; 
+    overflow-x: hidden;
   }
+  h3 {
+      font-size: 17px; 
+  }
+  .meetup { 
+      color: #e0393e;
+  }
+  .github {
+      color: #000;
+  }
+  .quora {
+      color:#aa2200;
+  }
+  .instagram_icon{
+      color: #d6249f;
+  }
+  .facebook {
+      color: #3b5998;
+  }
+  .shadow {
+    -webkit-box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
+-moz-box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
+box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
+  }
+.nav {
+    background-color: #fff; 
+      color: #333; 
+      padding-right: 40px;
+      padding-left: 20px;  
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+  }
+.nav p {
+    font-size: 20px; 
+    color: #000;
+    float: left; 
+    display: inline-block;
+    text-transform: uppercase; 
+}
+  .nav ul{
+      float: right; 
+      margin-right: 4%; 
+  }
+  .brand { 
+    display: inline-block;
+    padding: 2px 2px 2px 5px; 
+}
 a {
     text-decoration: none; 
-    color: #000; 
-    font-size: 30px; 
+    color: rgb(219, 23, 131); 
 }
 a :hover {
     color: #777; 
@@ -20,43 +69,152 @@ h2 {
     text-transform: uppercase;
   }
 
-#brand { 
-    height: 50px;
-    text-align: center;
-}
+
 #brand-icons {
     text-align: center; 
     margin: auto; 
 }
 .special-text {
-    font-size: 2em; 
+    font-size: 4em; 
     color: #fff; 
 }
 .main-boxes {
-    background-color: #9ad7d8;
-    height: auto; 
-    padding: 2%; 
-}
+        background: linear-gradient(-45deg, #212B36, #562292, #562292, #212B36, #212B36);
+        background-size: 400% 400%;
+        color: #fff !important;
+        -webkit-animation: Gradient 5s ease infinite;
+        -moz-animation: Gradient 5s ease infinite;
+        animation: Gradient 5s ease infinite;
+      }
+     
+      @-webkit-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+      
+        50% {
+          background-position: 100% 50%
+        }
+      
+        100% {
+          background-position: 0% 50%
+        }
+      }
+      
+      @-moz-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+      
+        50% {
+          background-position: 100% 50%
+        }
+      
+        100% {
+          background-position: 0% 50%
+        }
+      }
+      
+      @keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+      
+        50% {
+          background-position: 100% 50%
+        }
+      
+        100% {
+          background-position: 0% 50%
+        }
+      }
 .main-box-one {
     text-align: left;
     margin: 5px;
-    padding: 5%; 
-    max-width: 60%;
+    padding: 10% 2% 10% 2%; 
+    max-width: 50vw;
 }
+.stack {
+    width: 33%; 
+    float: left; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
 
-@media only screen and (max-width: 800px) {
+}
+.portfolio {
+    background-color: #fff;
+    padding: 2%;
+    overflow:auto; 
+    text-align: left; 
+}
+.instagram{
+    background: #fff;
+    padding: 3%;
+    overflow:auto; 
+    color: #000;
+    text-align: left;
+}
+.filters {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+     float: left;
+     text-align: center;
+     
+}
+.filters img {
+    height: 180px;
+    width: 180px;
+    transition: transform .2s;
+}
+.filters:hover {
+    transform: scale(1.05);
+}
+.meetup-section{
+    background-color: #e0393e;
+    padding: 5%;
+}
+.meetup-section img {
+    max-width: 400px;
+    height: auto; 
+}
+@media only screen and (max-width: 600px) {
     .main-boxes {
         background-color: #9ad7d8;
         padding: 1%; 
         margin-bottom: 3%; 
         height: auto; 
     }
+    .main-box-one {
+        max-width: 100vw;
+        padding: 20% 5% 10% 5%;
+    }
+    .stack {
+        width: 100vw; 
+    }
+    .nav {
+        text-align: center;
+    }
+    .nav ul{
+        float: right; 
+        margin-right: 4%;
+        visibility: hidden; 
+    }
+    .meetup-section {
+        padding: 5%;
+    }
+    .meetup-section img {
+        max-width: 80vw;
+        height: auto; 
+    }
 }
-#img {
-    max-width: 100%;
+.img {
+    max-width: 90%;
     height: auto;
-    left: 0;
-    bottom: 0;
+}
+.border {
+    border: 5px solid #fff;
 }
 #top-ten {
     margin: auto; 
@@ -72,19 +230,24 @@ h2 {
     color: #f169e6;
     font-size: 20px; 
 }
+.join {
+    background-color:  #9C6ADE;
+    padding: 5%; 
+    color: #fff;
+    height: 200px; 
+}
 #main {
     color: #000; 
     height: auto;
     text-align: center; 
 }
 
-#portfolio {
-    background-color: #ffe6e1;
-    height: auto;
-}
-
 footer {
-    display: block;
+    background-color: #212B36;
+    color: #fff;
+    display: inline-block;
     text-align: center; 
+    width: 100%;
     margin: auto;
+    clear: both; 
 }

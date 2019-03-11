@@ -2,32 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./dove.png">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel = "stylesheet" href ="./css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>Lady Geek</title>
+    <title>Michele Saba</title>
 </head>
 <body>
-    <Nav> 
-            <div id ="brand"> <h1>Michele Saba </h1> <a href="./second-page.html">More about me!</a></div> 
+    <Nav class ="nav"> 
+         <p>Michele Saba</p>
+        <ul> 
+            <a class ="brand facebook" href ="https://www.facebook.com/michelemsaba/" target="_blank"><i class="fab fa-facebook fa-2x"></i> </a> 
+            <a class ="brand instagram-icon" href ="https://www.instagram.com/michelemsaba/" target="_blank"><i class="fab fa-instagram fa-2x"></i> </a>
+            <a class ="brand quora" href ="https://www.quora.com/profile/Michele-Saba-2" target="_blank"> <i class="fab fa-quora fa-2x"></i> </a> 
+            <a class ="brand github" href ="https://github.com/MicheleSaba" target="_blank"> <i class="fab fa-github fa-2x"></i> </a>  
+            <a class ="brand meetup" href ="https://github.com/MicheleSaba" target="_blank"> <i class="fab fa-meetup fa-2x"></i> </a>  
+        </ul>
     </Nav>
     <Header class ="main-boxes">  
-            <div class="main-box-one">  <p class="special-text">Hello, I'm Michele. <br /> I like to create things.</p> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p> </div>  
+            <div class="main-box-one">  
+                <div class ="animated bounceInDown">
+                    <div class="special-text">Hello!</div>
+                </div> 
+                <p> I'm Michele. I love to create things.  </p> 
+            </div>  
         </Header>
     <Main id ="main">
-            <h2> Portfolio</h2> 
-            <div id ="portfolio">
-                <img id ="img" src="https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <div class ="portfolio">
+                <h2> Web Development </h2>
+                <hr />
+                <div class ="stack"> 
+                    <a href="https://crwomenintech.netlify.com/" target="_blank">
+                      <img class ="img shadow " src="./images/women-in-tech.jpg" />
+                    </a>
+                </div>
+                <div class ="stack "><img class ="img shadow" src="./images/affordableMockup.png" alt="Affordable Auto Logo"/></div>
+                <div class ="stack"><img class ="img shadow" src="./images/crmresale.png" /></div>
+                <div class ="stack"><img class ="img shadow" src="./images/hercar.jpg" /></div>
+                <div class ="stack"><img class ="img shadow" src="./images/pitaz.jpg" /></div>
+                <div class ="stack"><a href="https://michelesaba.netlify.com/uptown" target="_blank"><img class ="img shadow" src="./images/blog.jpg" /></a></div>
+            
             </div>
-            <div id ="brand-icons">      
-                    <a href ="https://www.facebook.com/michelemsaba/" target="_blank"><i class="fab fa-facebook"></i> </a> 
-                   <a href ="https://www.instagram.com/michelemsaba/" target="_blank"><i class="fab fa-instagram"></i> </a>
-                   <a href ="https://www.quora.com/profile/Michele-Saba-2" target="_blank"> <i class="fab fa-quora"></i> </a> 
-                   <a href ="https://github.com/MicheleSaba" target="_blank"> <i class="fab fa-github"></i> </a>  
-            </div>
+            <Section class ="instagram">
+                <h2> Instagram Augmented Reality Camera Effects</h2>
+                <hr />
+                <h3>I'm an Instagram AR Creator/Contributor in the Spark beta program. I created face filters using various techniques, including 3D modeling, design and Javascript. <br /> Follow me and you will have access to all of my filters <a href="https://www.instagram.com/michelemsaba/" target="_blank">@michelemsaba</a></h3>
+                    <div class ="filters">
+                        <a href="https://www.instagram.com/a/r/?effect_id=1130860650417067" target="_blank">
+                            <img class ="img shadow" src="./images/dots.jpg" /> </a> 
+                            <p>Polka Dots <br/>76,798 Impressions</p>
+                    </div>
+                    <div class ="filters"> 
+                        <a href="https://www.instagram.com/a/r/?effect_id=290978304952955" target="_blank">
+                            <img class ="img shadow" src="./images/glitter.png" /></a>
+                            <p>Glitter Fun <br/>343,627 Impressions</p>
+                    </div>
+                    <div class ="filters">
+                        <a href="https://www.instagram.com/a/r/?effect_id=1535206053289832" target="_blank">
+                            <img class ="img shadow" src="./images/FunnyFace.jpg" /></a>
+                            <p>Pretty Funny Face <br/> 140,492,759 Impressions</p>
+                    </div>
+                    <div class ="filters">
+                        <a href="https://www.instagram.com/a/r/?effect_id=299968370713863" target="_blank">
+                            <img class ="img shadow" src="./images/eyebrow.jpg" /></a>
+                            <p>InstaBrow <br />239,503 Impressions</p>
+                    </div>
+                    <div class ="filters">
+                        <a href="https://www.instagram.com/a/r/?effect_id=425405811336031" target="_blank">
+                            <img class ="img shadow" src="./images/Strobing.jpg" /></a>
+                            <p>Strobing <br/>70,887 Impressions</p>
+                    </div>
+                    <div class ="filters">
+                            <a href="https://www.instagram.com/a/r/?effect_id=425405811336031" target="_blank">
+                                <img class ="img shadow" src="./images/floatingStars.jpg" /></a>
+                                <p>Star Bright <br/> 179,181 Impressions</p>
+                        </div>
+            </Section>
+            <section class ="meetup-section">
+                    <a href="https://www.google.com" target="_blank"><img src="./images/meetupWhite.png"></a>
+                    <p> Join the Cedar Rapids Women In Techology Meetup!</p>
+
+            </section>
+            <section class ="group-section">
+                <div class="join"><i class="fas fa-dove fa-2x"></i>Cedar Rapids & Marion Resale <br/> {peace.love.swap} <br /> An online community in the
+                    Cedar Rapids Corridor Area to buy & sell used items, ask questions and get recomendations.</div>
+                    <a href="https://www.google.com" target="_blank"><img src="./images/meetupWhite.png"></a>
+                    <p> Join the Cedar Rapids Women In Techology Meetup!</p>
+
+            </section>
          </Main>
     <footer>
     <p> &#169; Michele Saba </p>
