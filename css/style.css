@@ -22,10 +22,16 @@ body {
   .facebook {
       color: #3b5998;
   }
+  .bounce {
+    transition: transform .2s;
+  }
+  .bounce :hover {
+    transform: scale(1.05);
+  }
   .shadow {
     -webkit-box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
--moz-box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
-box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
+    -moz-box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
+     box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
   }
 .nav {
     background-color: #fff; 
@@ -35,8 +41,9 @@ box-shadow: 6px 6px 20px -6px rgba(176,170,176,1);
       width: 100%;
       margin-right: auto;
       margin-left: auto;
-      position: fixed; /* Set the navbar to fixed position */
-      top: 0; /* Position the navbar at the top of the page */
+      z-index: 10000;
+      position: fixed; 
+      top: 0; 
   }
 .nav p {
     font-size: 20px; 
@@ -67,8 +74,6 @@ h2 {
     font-size: 1.3em; 
     text-transform: uppercase;
   }
-
-
 #brand-icons {
     text-align: center; 
     margin: auto; 
@@ -78,9 +83,10 @@ h2 {
     color: #fff; 
 }
 .main-boxes {
-        background: linear-gradient(-45deg, #212B36, #562292, #562292, #212B36, #212B36);
+        background: linear-gradient(-45deg, #212B36, #212B36, #212B36, #212B36);
         background-size: 400% 400%;
         color: #fff !important;
+        font-size: 20px;
         -webkit-animation: Gradient 5s ease infinite;
         -moz-animation: Gradient 5s ease infinite;
         animation: Gradient 5s ease infinite;
@@ -133,19 +139,19 @@ h2 {
     padding: 10% 2% 10% 2%; 
     max-width: 50vw;
 }
-.stack {
-    width: 33.33%; 
-    float: left; 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
-
-}
 .portfolio {
-    background-color: #fff;
+    background-color: pink;
     padding: 2%;
     overflow:auto; 
     text-align: left; 
+}
+.stack {
+    width: 33.33%; 
+    box-sizing: border-box; 
+    padding: auto;
+    float: left; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
 }
 .instagram{
     background: #fff;
@@ -164,13 +170,11 @@ h2 {
 .filters img {
     height: 180px;
     width: 180px;
-    transition: transform .2s;
-}
-.filters:hover {
-    transform: scale(1.05);
+    margin: auto;  
 }
 .meetup-section{
-    background-color: #e0393e;
+    background-color: #212B36;
+    color: #fff; 
     padding: 5%;
 }
 .meetup-section img {
@@ -192,9 +196,11 @@ h2 {
         width: 100vw; 
     }
     .nav {
-        text-align: center;
+        text-align: left;
+        height: 60px; 
+        padding-left: 35px;
     }
-    .nav ul{
+    .nav ul {
         float: right; 
         margin-right: 4%;
         visibility: hidden; 
@@ -208,8 +214,9 @@ h2 {
     }
 }
 .img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
+    margin: auto; 
 }
 .border {
     border: 5px solid #fff;
@@ -229,12 +236,15 @@ h2 {
     font-size: 20px; 
 }
 .join {
-    background-color:  #9C6ADE;
+    background-color:  #fff;
     padding: 5%; 
-    color: #fff;
+    margin: auto;
+    width: 60vw;
+    font-size: 20px; 
+    color: #000;
     height: 200px; 
 }
-#main {
+.main {
     color: #000; 
     height: auto;
     text-align: center; 
@@ -250,4 +260,18 @@ footer {
     text-align: center; 
     width: 100%;
     margin: auto;
-
+}
+.practice {
+    background-color: #000; 
+    color: #fff; 
+    font-size: 20px; 
+    text-align: center; 
+    height: 600px; 
+    padding-top: 5%; 
+}
+.practice ol {
+    list-style: none;
+}
+.score {
+    font-size: 50px; 
+}
