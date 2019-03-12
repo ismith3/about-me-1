@@ -1,3 +1,4 @@
+
 /*var today = new Date();
 document.write (today);
 var name = "Michele";
@@ -30,3 +31,5 @@ console.log(noun, "The users name");
 console.log(verb, "The users verb");
 console.log(adjective1, "The users adjective1");
 console.log(name, "The users name");
+=======
+};
