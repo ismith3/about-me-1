@@ -1,11 +1,3 @@
-/*
-Questions...
-What is your name? 
-Do I like avocados?
-Do I like apples? 
-Is my favorite green?
-Is my favorite song, "Happy Birthday"?
-
 'use strict';
 
 
@@ -70,9 +62,6 @@ else {
 };
 elScore.innerHTML = score;
 
-
-
-
 var answer = 7;
 var i = 0; 
 
@@ -80,8 +69,6 @@ while (number !== answer && i <= 4) {
     var number = parseInt(prompt("What is my favorite number?"));
     i += 1; 
 };
-
-
 
 // for loop for quiz question 6
 var answer = 7;
@@ -99,7 +86,6 @@ for (var i = 0; i < 4; i++){
         break;
     }
 }
-*/
 
 //while loop for quiz question 6 
 var answer = 7; 
@@ -122,12 +108,11 @@ while (guess !== answer && i < 4) {
 //quiz question 7 
 
 
-var correctAnswers = ["a", "b", "c"];
-
+var correctAnswers = ["lily", "alexus", "jersey", "jadynn"];
 for (var i = 0; i < 6; i++) {
-    var guess = prompt("What's my favorite letter?");
+    var guess = prompt("What are my daughter's names?").toLowerCase();
         for (var j = 0; j < correctAnswers.length; j++) {
-            if (guess === correctAnswers[i]) {
+            if (guess === correctAnswers[j]) {
                 alert("Yes!");
                 var correct = true;
                 break
@@ -137,6 +122,7 @@ for (var i = 0; i < 6; i++) {
         break;
     }
 }
+
 
 
 
