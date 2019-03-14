@@ -79,12 +79,14 @@ h2 {
     margin: auto; 
 }
 .special-text {
+    margin-top: 10px;
     font-size: 4em; 
     color: #fff; 
 }
 .main-boxes {
         background: linear-gradient(-45deg, #212B36, #212B36, #212B36, #212B36);
         background-size: 400% 400%;
+        font-size: 24px;
         color: #fff !important;
         font-size: 20px;
         -webkit-animation: Gradient 5s ease infinite;
@@ -143,6 +145,10 @@ h2 {
     background-color: pink;
     padding: 2%;
     overflow:auto; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+    padding-left: 20px; 
     text-align: left; 
 }
 .stack {
@@ -150,9 +156,12 @@ h2 {
     box-sizing: border-box; 
     padding: auto;
     float: left; 
+    margin: auto; 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
 }
+
 .instagram{
     background: #fff;
     padding: 3%;
@@ -191,6 +200,9 @@ h2 {
     .main-box-one {
         max-width: 100vw;
         padding: 20% 5% 10% 5%;
+    }
+    .special-text {
+        margin-top: 20px; 
     }
     .stack {
         width: 100vw; 
