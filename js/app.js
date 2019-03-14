@@ -1,5 +1,6 @@
 
-/*var today = new Date();
+/*
+var today = new Date();
 document.write (today);
 var name = "Michele";
 var count = 5; 
@@ -31,7 +32,7 @@ console.log(noun, "The users name");
 console.log(verb, "The users verb");
 console.log(adjective1, "The users adjective1");
 console.log(name, "The users name");
-*/
+
 
 var varName1 = confirm("Are you sure?");
 var varName = false;
@@ -40,6 +41,7 @@ if ( varName1 !== varName ) {
 } else {
   document.write("Not Great!");
 }
+*/
 //if (true === true) {
 //   alert("");
 // }
