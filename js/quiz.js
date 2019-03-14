@@ -5,6 +5,7 @@ var avocados = (prompt("Do I like Avocados?"));
 var score = 0; 
 var elScore = document.getElementById('score');
 
+
 if (avocados.toLowerCase() === "y" || avocados.toLowerCase() === "yes" ) {
     console.log(avocados,"Correct");
     alert("Correct!")
@@ -60,8 +61,8 @@ else {
     console.log('please remember to answer yes or no');
     alert("Incorrect!");
 };
-elScore.innerHTML = score;
 
+/*
 var answer = 7;
 var i = 0; 
 
@@ -71,6 +72,7 @@ while (number !== answer && i <= 4) {
 };
 
 // for loop for quiz question 6
+
 var answer = 7;
 
 for (var i = 0; i < 4; i++){
@@ -83,10 +85,11 @@ for (var i = 0; i < 4; i++){
     }
     else if (guess === answer) {
         alert("Yes!");
+        score += 1;
         break;
     }
 }
-
+*/
 //while loop for quiz question 6 
 var answer = 7; 
 var i = 0; 
@@ -102,6 +105,7 @@ while (guess !== answer && i < 4) {
     }
     else if (guess === answer) {
         alert("Yes!");
+        score += 1;
         break;
     }
 }
@@ -114,15 +118,21 @@ for (var i = 0; i < 6; i++) {
         for (var j = 0; j < correctAnswers.length; j++) {
             if (guess === correctAnswers[j]) {
                 alert("Yes!");
+                score += 1;
                 var correct = true;
                 break
             }
         }
     if(correct) {
         break;
+        
     }
 }
+for (var i = 0; i < correctAnswers.length; i++) {
+    document.write(correctAnswers[i] + " ");
+}
 
+elScore.innerHTML = score;
 
 
 
